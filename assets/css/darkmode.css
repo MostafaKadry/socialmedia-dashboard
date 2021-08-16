@@ -1,0 +1,199 @@
+body {
+  background-color: #1D2029;
+}
+
+header .bg {
+  background-color: #20222F;
+}
+header .header-container {
+  height: 13rem;
+  margin-bottom: -4.5rem;
+}
+header .header-container .header-row {
+  width: 85%;
+  margin: 0 auto auto auto;
+  padding: 3rem 0;
+}
+header .header-container .header-row h2 {
+  font-size: 1.54rem;
+  font-weight: bold;
+  color: white;
+}
+header .header-container .header-row h6 {
+  font-size: 0.84rem;
+  font-weight: bold;
+  color: #AEB2CB;
+}
+header .header-container .header-row .dark-mode-box .title-dark-mode {
+  margin: 2rem 2rem 0 0;
+}
+header .header-container .header-row .dark-mode-box h6 {
+  font-weight: bold !important;
+  display: inline;
+}
+header .header-container .header-row .switch {
+  position: relative;
+  display: inline-block;
+  width: 2rem;
+  height: 1.25rem;
+  margin: 0;
+}
+header .header-container .header-row .switch input {
+  display: none;
+}
+header .header-container .header-row .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 6px;
+  bottom: -1px;
+  left: -0.9rem;
+  right: 0.157rem;
+  background-color: #CCC;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+header .header-container .header-row .slider:before {
+  position: absolute;
+  content: "";
+  height: 0.885rem;
+  width: 0.885rem;
+  right: -0.15rem;
+  bottom: 0.5px;
+  background-color: #333A56;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+header .header-container .header-row input:checked + .slider {
+  background-image: linear-gradient(90deg, #3172fd, #3CBBB2);
+}
+header .header-container .header-row input:checked + .slider:before {
+  background-color: #333A56;
+}
+header .header-container .header-row input:checked + .slider:before {
+  transform: translateX(-2rem);
+}
+
+.lastupdate #last-update-cards-1, .lastupdate #last-update-cards-2 {
+  border-top: 3px solid #007bff;
+}
+.lastupdate #last-update-cards-3 {
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(90deg, #F4C494, #ea95d8);
+  border-image-slice: 1 0 0;
+  border-radius: 0;
+}
+.lastupdate #last-update-cards-4 {
+  border-top: 3px solid darkred;
+}
+.lastupdate .socail-media-cards {
+  width: 100%;
+  background-color: #252B43;
+}
+.lastupdate .socail-media-cards .card-body a {
+  margin-bottom: 1rem;
+  display: block;
+}
+.lastupdate .socail-media-cards .card-body a img {
+  margin: auto 0.5rem;
+}
+.lastupdate .socail-media-cards .card-body h2 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+.lastupdate .socail-media-cards .card-body P {
+  font-size: 0.725rem;
+  letter-spacing: 3px;
+  color: #adb5bd;
+}
+.lastupdate .socail-media-cards .card-body span.card-subtitle {
+  font-size: 0.7rem;
+  margin: 0 0.5rem;
+  color: #1EB589;
+  font-weight: bold;
+}
+.lastupdate .socail-media-cards:hover {
+  width: 100%;
+  background-color: #333A56;
+}
+
+.overview h4 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+.overview .overview-card {
+  padding: 0 1rem;
+  background-color: #252B43;
+}
+.overview .overview-card .card-body {
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.overview .overview-card:hover {
+  padding: 0 1rem;
+  background-color: #333A56;
+}
+.overview .overview-left p {
+  font-size: 0.825rem;
+  font-weight: bold;
+}
+.overview .overview-left h5 {
+  padding: 15px 0 0 0;
+  color: white;
+}
+.overview .overview-right .up-down-box {
+  padding: 18px 0 0 0;
+}
+.overview .overview-right .up-down-box .up-box span:last-of-type {
+  font-size: 0.75rem;
+  margin-left: 0.4rem;
+  color: #1EB589;
+}
+.overview .overview-right .up-down-box .down-box span:last-of-type {
+  color: #DC414C;
+  font-size: 0.75rem;
+  margin-left: 0.4rem;
+}
+.overview h5 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 576px) {
+  .header-container {
+    margin-bottom: -2.5rem !important;
+    height: 16.3rem !important;
+  }
+  .header-container .header-row {
+    width: 100% !important;
+    margin: 0 auto auto auto !important;
+    padding: 2rem 0 !important;
+  }
+  .header-container .header-row .col-sm-12 {
+    padding-bottom: 1rem !important;
+  }
+  .header-container .header-row .dark-mode-box {
+    border-top: 1.5px solid grey !important;
+    padding-top: 1rem !important;
+  }
+
+  #overview .overview-card-col {
+    margin-bottom: 1rem !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  header .switcher-span {
+    position: absolute;
+    right: 0rem;
+  }
+ 
+}
+@media only screen and (max-width: 991px) {
+  .overview-card-col {
+    margin-bottom: 2rem !important;
+  }
+}
+
+/*# sourceMappingURL=darkmode.css.map */

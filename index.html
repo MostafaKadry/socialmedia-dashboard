@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="..//images/favicon-32x32.png">
+    <title>Frontend Mentor | Social media dashboard with theme switcher</title>
+    <!-- bootstrap css files-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- sass compiled css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/darkmode.css">
+    <!--font source-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="fonts/">
+  </head>
+  <body style="font-family :'Inter', sans-serif;">
+    <!-- header section || First Section-->
+    <header>
+      <div class="container-fluid bg header-container">
+        <div class="row header-row">
+          <div class="col-md-6 col-lg-6 col-sm-12 m-auto"> 
+            <h2>Social Media Dashbord </h2>
+            <h6>Totla Followers 23,004</h6>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12 dark-mode-box text-sm-start text-md-right"><span class="title-dark-mode"> 
+              <h6 class="w-50">Dark Mode  </h6></span><span class="switcher-span"> 
+              <label class="switch dark-mode-btn"> 
+                <input type="checkbox" checked><span class="slider"> </span>
+              </label></span></div>
+        </div>
+      </div>
+    </header>
+    <!-- last update || second section-->
+    <section class="lastupdate" id="lastupdate">
+      <div class="container">
+        <div class="row"> 
+          <!-- First Card | Facebook-->
+          <div class="col-lg-3 col-md-6 col-12 mb-5"> 
+            <div class="card text-center socail-media-cards" id="last-update-cards-1"> 
+              <div class="card-body"><a class="card-link text-muted" href="#"><img src='images/icon-facebook.svg' class= #{socialData.socialIcon}>@nathanf</a>
+                <h2 class="card-title">1987</h2>
+                <p class="card-text text-uppercase">followers </p><img src="images/icon-up.svg" alt="alt"/><span class="card-subtitle">12Today</span>
+              </div>
+            </div>
+          </div>
+          <!-- Second Card | Twitter-->
+          <div class="col-lg-3 col-md-6 col-12 mb-5"> 
+            <div class="card text-center socail-media-cards" id="last-update-cards-2"> 
+              <div class="card-body"><a class="card-link text-muted" href="#"><img src='images/icon-twitter.svg' class= #{socialData.socialIcon}>@nathanf</a>
+                <h2 class="card-title">1044</h2>
+                <p class="card-text text-uppercase">followers </p><img src="images/icon-up.svg" alt="alt"/><span class="card-subtitle">99Today</span>
+              </div>
+            </div>
+          </div>
+          <!-- Third Card | Instgram-->
+          <div class="col-lg-3 col-md-6 col-12 mb-5"> 
+            <div id="last-update-cards-3">
+              <div class="card text-center socail-media-cards" style="border-radius: 0;"> 
+                <div class="card-body"><a class="card-link text-muted" href="#"><img src='images/icon-instagram.svg' class= #{socialData.socialIcon}>@realnathanf</a>
+                  <h2 class="card-title">11k</h2>
+                  <p class="card-text text-uppercase">followers </p><img src="images/icon-up.svg" alt="alt"/><span class="card-subtitle">1099Today</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth Card | Youtube-->
+          <div class="col-lg-3 col-md-6 col-12 mb-5"> 
+            <div class="card text-center socail-media-cards" id="last-update-cards-4"> 
+              <div class="card-body"><a class="card-link text-muted" href="#"><img src='images/icon-youtube.svg' class= #{socialData.socialIcon}>Nathan F</a>
+                <h2 class="card-title">8239</h2>
+                <p class="card-text text-uppercase">subscirbers  </p><img src="images/icon-down.svg" alt="alt"/><span class="card-subtitle" style="color :#DC414C">144Today</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Over VIew || thirds Section-->
+    <section class="overview" id="overview"> 
+      <div class="container"> 
+        <h4 class="text-capitalize mb-4">overview - today
+          <!--first row card-->
+        </h4>
+        <div class="row mb-4"> 
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">page Views</p>
+                    <h5>87</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-facebook.svg' class= 'd-facebook'></p>
+                    <div class="up-down-box"> 
+                      <div class="up-box"> <span><img src='images/icon-up.svg' class= 'd-facebook'></span><span>3%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">Likes</p>
+                    <h5>52</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-facebook.svg' class= 'd-facebook'></p>
+                    <div class="up-down-box"> 
+                      <div class="down-box"><span><img src='images/icon-down.svg' class= 'd-facebook'></span><span>2%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">Likes</p>
+                    <h5>5462</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-instagram.svg' class= 'd-instagram'></p>
+                    <div class="up-down-box"> 
+                      <div class="up-box"> <span><img src='images/icon-up.svg' class= 'd-instagram'></span><span>2257%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">Profile Views</p>
+                    <h5>52k</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-instagram.svg' class= 'd-instagram'></p>
+                    <div class="up-down-box"> 
+                      <div class="up-box"> <span><img src='images/icon-up.svg' class= 'd-instagram'></span><span>3%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- second row cards-->
+        <div class="row mb-5"> 
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">Retweetes</p>
+                    <h5>117</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-twitter.svg' class= #{x.socialIcon}></p>
+                    <div class="up-down-box"> 
+                      <div class="up-box"> <span><img src='images/icon-up.svg' class= 'd-twitter'></span><span>303%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">Likes</p>
+                    <h5>507</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-twitter.svg' class= #{x.socialIcon}></p>
+                    <div class="up-down-box"> 
+                      <div class="up-box"> <span><img src='images/icon-up.svg' class= 'd-twitter'></span><span>553%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">Likes</p>
+                    <h5>107</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-youtube.svg' class= #{x.socialIcon}></p>
+                    <div class="up-down-box"> 
+                      <div class="down-box"><span><img src='images/icon-down.svg' class= 'd-youtube'></span><span>19%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Card overView item -->
+          <div class="col-12 col-md-6 col-lg-3 overview-card-col">
+            <div class="card h-100 w-100 overview-card">
+              <div class="card-body"> 
+                <div class="row"> 
+                  <div class="overview-left w-50">
+                    <p class="text-muted">Totla Views</p>
+                    <h5>1407</h5>
+                  </div>
+                  <div class="overview-right w-50" style="text-align: right">
+                    <p><img src='images/icon-youtube.svg' class= #{x.socialIcon}></p>
+                    <div class="up-down-box"> 
+                      <div class="down-box"><span><img src='images/icon-down.svg' class= 'd-youtube'></span><span>12%</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
